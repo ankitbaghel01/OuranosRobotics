@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ouranos Robotics</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    #img {
+      filter: blur(4px);
+    }
+
+    #nav {
+      color: #a7a5a5;
+    }
+
+    #nav:hover {
+      color: #ffffff;
+    }
+
+    .home-text {
+      color: #fff;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+    }
+
+    .home-text h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+    }
+
+    .home-text p {
+      font-weight: 500;
+    }
+
+    #article {
+      color: rgb(7, 175, 7);
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column-left {
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .column-center {
+      width: 30%;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+
+    .column-right {
+      width: 30%;
+      margin-left: 10px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    #left {
+      margin-bottom: 20px;
+    }
+
+    #pagination {
+      display: flex;
+      justify-content: center;
+
+    }
+
+    #light {
+      font-weight: lighter;
+      color: #949494;
+    }
+
+    @media (max-width: 1213px) {
+
+      #left{
+        display: none;
+      }
+
+
+      .column-center {
+        width: 50%;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .column-right {
+        width: 50%;
+        margin-left: 10px;
+      }
+
+      .container {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+    }
+
+    @media (max-width:770px) {
+
+      .home-bg {
+        display: none;
+      }
+
+      .home-text {
+        display: none;
+      }
+      #img{
+        display: none;
+      }
+
+
+      .container {
+        width: 90%;
+        display: block;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="or.jpg" alt="" width="100vh"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="nav" class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav" class="nav-link active" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav" class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="nav">Blog</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+
+          <button class="btn btn-outline-success" type="submit">Buy now</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div id="home-bg">
+    <img id="img" src="farm.jpg" alt="" width="100%">
+  </div>
+  <div class="home-text">
+    <h1>Transforming Agriculture with Technology</h1>
+    <p>Revolutionizing Agriculture through Innovation:Explore the Latest Trends and Technology in Agri </p>
+    <p>Tech with Ouranos Robotics' Leading Blog</p>
+  </div>
+  <br>
+
+  <main class="s1">
+   
+
+    <div class="container">
+
+   
+      <div class="column-left">
+        <p></p>
+        <form class="d-flex" id="left" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+              height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg></button>
+        </form>
+
+
+        <div class="card" id="left" style="width: 22rem;">
+          <div class="card-body">
+            <h4 class="card-title">Categories</h4>
+            <br>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Automation</h6>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-body-secondary">IoT</h6>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Precision Agriculture</h6>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Sustainable Farming</h6>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Industry News</h6>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Case Studies</h6>
+            <hr>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Tips & Tricks</h6>
+
+
+
+          </div>
+        </div>
+        <div class="card" id="left" style="width: 22rem;">
+          <div class="card-body">
+            <h4 class="card-title">Top Posts</h4>
+            <br>
+
+            <div style="display: flex;">
+              <div style="flex-basis: 20%; background-color: rgb(255, 255, 255);">
+                <h1>1</h1>
+                <br>
+                <br>
+
+                <h1>2</h1>
+                <br>
+
+                <br>
+                <h1>3</h1>
+                <br>
+                <br>
+                <h1>4</h1>
+                <br>
+                <br>
+                <h1>5</h1>
+              </div>
+              <div style="flex-basis: 80%; background-color: rgb(255, 255, 255);">
+                <h6>How Regenerative Agriculture is Changing the Game</h6>
+                <p>Sustainable Farming- March,2022</p>
+                <h6>Precision Agriculture 2.O:Using Artificial Intelligence to Optimize Crop Yields</h6>
+                <p>Precision Agriculture-September 2021</p>
+
+
+                <h6>Breaking Ground: How Automation is Revolutionizing the Agriculture Industry</h6>
+                <p>Industry News- May 2022</p>
+
+
+                <h6>How Ouranos Robotics' Smart Sensors are Transforming Crop Management</h6>
+                <p>IoT- July 2021</p>
+
+
+                <h6>The Impact of Technology on the Agriculture Industry</h6>
+                <p>Expert Insights- November 2021</p>
+
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="column-center">
+        <p></p>
+
+        <div class="card" id="size" style="width: 22rem;">
+          <img src="orgnic.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p id="light"> Sustainable Farming- April 2023</p>
+            <h5 class="card-title">Organic Farming:How it Can Help Save the Planet</h5>
+            <br>
+            <p class="card-text">Learn about the benefits of Organic Farming and how it can help reduce the envitonment
+              Impact of Agriculture.</p>
+            <a href="orgnic.html" id="article">Read Full Article</a>
+          </div>
+        </div>
+        <div class="card" id="size" style="width: 22rem;">
+          <img src="machine.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p id="light"> Automation- March 2023</p>
+            <h5 class="card-title">5 Ways to Optimize Your Crop Yields with Automation</h5>
+            <p class="card-text">Find out how automation can increase Productivity on the farm, and learn about the
+              latest tools and technologies.</p>
+            <a href="#" id="article">Read Full Article</a>
+          </div>
+        </div>
+        <div class="card" id="size" style="width: 22rem;">
+          <img src="technology.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p id="light">Expert Insights- February 2023</p>
+            <h5 class="card-title">Expert Insights:The coming future of Agri-Tech </h5>
+            <p class="card-text">Hear from top experts in the field about the latest trends and technologies shaping the
+              future of Agri-tech.</p>
+            <a href="#" id="article">Read Article</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column-right">
+        <p></p>
+        <div class="card" style="width: 22rem;">
+          <img src="kerla.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p id="light">IoT - April 2023</p>
+            <h5 class="card-title">The Internet of Things and Precision Agriculture:A Match Made in Heaven</h5>
+            <p class="card-text">Discover how IoT devices are transformimg Precision Agriculture,from soli moisture
+              Sensors to drones.</p>
+            <a href="#" id="article">Read Full Article</a>
+          </div>
+        </div>
+        <div class="card" style="width: 22rem;">
+          <img src="bussiness.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p id="light"> Sustainable Farming- February 2023</p>
+            <h5 class="card-title">The Business Case for Sustainable Farming:Why it Makes Finacial Sense</h5>
+            <p class="card-text">Explore the economic benefits of Sustainable Farming practices,from reduced input
+              costs.</p>
+            <a href="#" id="article">Read Article</a>
+          </div>
+        </div>
+        <div class="card" style="width: 22rem;">
+          <img src="waist.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p id="light">Precision Agriculture- January 2023</p>
+            <h5 class="card-title">Maximizing Crop Yields with Precision Planting</h5>
+            <p class="card-text">Discover how precision planting can help Farmers maximize their crop Yields while
+              reducing waste and costs.
+            </p>
+            <a href="#" id="article">Read Full Article</a>
+          </div>
+        </div>
+      </div>
+  </main>
+  <nav id="pagination" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+</body>
+
+</html>
